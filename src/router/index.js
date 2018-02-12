@@ -6,7 +6,7 @@ Vue.use(Router);
 const router = new Router({
   routes: [
     {
-      path: 'signup',
+      path: '/signup',
       name: 'userSignUp',
       component(resolve) {
         require.ensure(['../views/PageSignUp.vue'], () => {
@@ -19,7 +19,7 @@ const router = new Router({
       },
     },
     {
-      path: 'login',
+      path: '/login',
       name: 'userLogIn',
       component(resolve) {
         require.ensure(['../views/PageSignIn.vue'], () => {
@@ -29,6 +29,84 @@ const router = new Router({
       },
       meta: {
         title: '用户登陆',
+      },
+    },
+    {
+      path: '/overview',
+      name: 'overview',
+      component(resolve) {
+        require.ensure(['../views/PageOverview.vue'], () => {
+          // eslint-disable-next-line
+          resolve(require('../views/PageOverview.vue'));
+        });
+      },
+      meta: {
+        title: '总览',
+      },
+    },
+    {
+      path: '/index',
+      name: 'index',
+      component(resolve) {
+        require.ensure(['../views/PageIndex.vue'], () => {
+          // eslint-disable-next-line
+          resolve(require('../views/PageIndex.vue'));
+        });
+      },
+      meta: {
+        title: '主页',
+      },
+    },
+    {
+      path: '/place',
+      name: 'place',
+      component(resolve) {
+        require.ensure(['../views/PagePlace.vue'], () => {
+          // eslint-disable-next-line
+          resolve(require('../views/PagePlace.vue'));
+        });
+      },
+      meta: {
+        title: '场馆',
+      },
+    },
+    {
+      path: '/activity',
+      name: 'activity',
+      component(resolve) {
+        require.ensure(['../views/PageActivity.vue'], () => {
+          // eslint-disable-next-line
+          resolve(require('../views/PageActivity.vue'));
+        });
+      },
+      meta: {
+        title: '活动',
+      },
+    },
+    {
+      path: '/funding',
+      name: 'funding',
+      component(resolve) {
+        require.ensure(['../views/PageFunding.vue'], () => {
+          // eslint-disable-next-line
+          resolve(require('../views/PageFunding.vue'));
+        });
+      },
+      meta: {
+        title: '资金',
+      },
+    },
+    {
+      path: '/setting',
+      name: 'setting',
+      component(resolve) {
+        require.ensure(['../views/PageSetting.vue'], () => {
+          // eslint-disable-next-line
+          resolve(require('../views/PageSetting.vue'));
+        });
+      },
+      meta: {
+        title: '设置',
       },
     },
   ],
