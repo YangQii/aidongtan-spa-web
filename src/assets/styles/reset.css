@@ -1,0 +1,221 @@
+@charset "utf-8";
+/*RESET v3*/
+html, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, cite, img, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+body {
+  font-family: Microsoft Yahei, Helvetica;
+  font-size: 14px;
+  background: #eef0f3;
+  color:#464c5b;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+*[v-cloak] {
+  display: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+button {
+  outline: none;
+  font-family: Microsoft Yahei, Helvetica;
+}
+ol, ul {
+  margin: 0;
+  padding: 0;
+}
+ol, ul, li {
+  list-style: none;
+}
+i, em {
+  font-style: normal;
+}
+blockquote {
+  quotes: none;
+}
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+a {
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-decoration:none;
+  text-decoration: none;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
+input, textarea{
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  outline: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+select, option{
+  font-family: inherit;
+}
+.noselect{
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.clearfix:before,.clearfix:after{
+  content:"";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+.clearfix{
+  *zoom:1;
+}
+
+.block {
+  display: block;
+}
+
+.fl {
+  float: left;
+}
+.fr {
+  float: right !important;
+}
+
+.col-2 {
+  width:50%
+}
+.diff .col-2{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.col-3 {
+  width:33.3333%
+}
+.diff .col-3{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.col-4 {
+  width:25%
+}
+
+.no-border {
+  border:none !important;
+}
+
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+  width: 6px;
+  height:6px;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #666e80;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: none;
+  border-radius: 2px;
+}
+
+.btn-blue {
+  background:#679fef;
+  color:#fff;
+  transition: background linear .3s;
+  -webkit-transition: background linear .3s;
+  -moz-transition: background linear .3s;
+  -ms-transition: background linear .3s;
+  -o-transition: background linear .3s;
+}
+.btn-blue:hover {
+  background:#5f93e1;
+  color: #FFFFFF;
+}
+.btn-green {
+  background:#00cc99;
+  color:#fff;
+  transition: background linear .3s;
+  -webkit-transition: background linear .3s;
+  -moz-transition: background linear .3s;
+  -ms-transition: background linear .3s;
+  -o-transition: background linear .3s;
+}
+.btn-green:hover {
+  background:#0eb78d;
+}
+.btn-grey {
+  background:#f5f6f8;
+  color:#3c3f43;
+  transition: background linear .3s;
+  -webkit-transition: background linear .3s;
+  -moz-transition: background linear .3s;
+  -ms-transition: background linear .3s;
+  -o-transition: background linear .3s;
+}
+.btn-grey:hover {
+  background:#c7ccd3
+}
+.grey {
+  color:#657180;
+  transition: background linear .3s;
+  -webkit-transition: background linear .3s;
+  -moz-transition: background linear .3s;
+  -ms-transition: background linear .3s;
+  -o-transition: background linear .3s;
+}
+.grey:hover {
+  color:#4683de;
+}
+
+.ellipsis{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.trans {
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
+
+.radius-20 {
+  border-radius:20px;
+}
+
