@@ -61,7 +61,7 @@
     right: 83px;
     width: 26px;
     height: 26px;
-    top: 40px;
+    top: 35px;
     background: #679fef;
   }
   .top_sginout {
@@ -69,7 +69,7 @@
     right: 31px;
     width: 26px;
     height: 26px;
-    top: 40px;
+    top: 35px;
     background: #679fef;
   }
 </style>
