@@ -35,9 +35,16 @@
       </div>
       <div>
         <span style="width:368px;height:333px;border: 1px solid #EAE0FA;float: left;padding: 26px 32px 40px 21px">
-          <div>
+          <div style="height: 36px;line-height: 36px;padding-bottom: 15px;border-bottom: 1px dashed #EAE0FA">
             <span style="font-size: 18px">1000元/半年卡</span>
-            <span style="width: 64px;height: 21px;background: #FF4D55;border-radius: 3px;float: right;margin-right: 24px;font-size: 12px;line-height: 21px">查看详情</span>
+            <span style="
+            width: 64px;
+            background: #FF4D55;
+            border-radius: 3px;
+            float: right;
+            margin-right: 24px;
+            font-size: 12px;"> 查看详情
+            </span>
           </div>
         </span>
         <span style="width:368px;height:333px;border: 1px solid #EAE0FA;float: left;margin-left: 215px">
