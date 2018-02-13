@@ -9,6 +9,38 @@
         <span class="content_info-span-m">54886000<i>元</i></span>
         <span class="content_info-span">健身房点击量: 8955000 次</span>
       </div>
+      <div style="padding-top: 39px">
+        <span>
+          <i style="width: 55px;height: 29px;background: #679fef"></i>
+          <i style="font-size: 18px">一卡通累计消费人数：54886000 人</i>
+        </span>
+        <span style="margin-left: 290px">
+          <i style="width: 55px;height: 29px;background: #679fef"></i>
+          <i style="font-size: 18px">一卡通累计消费人数：54886000 人</i>
+        </span>
+      </div>
+      <div>
+        <span>
+          <i style="width: 55px;height: 29px;background: #679fef"></i>
+          <i style="font-size: 18px">一卡通累计消费人数：54886000 人</i>
+        </span>
+        <span style="margin-left: 290px">
+          <i style="width: 55px;height: 29px;background: #679fef"></i>
+          <i style="font-size: 18px">一卡通累计消费人数：54886000 人</i>
+        </span>
+      </div>
+      <div style="padding-top: 100px;padding-bottom: 27px">
+        <span style="font-size: 24px;color: #333333">一卡通会员价格</span>
+        <span style="font-size: 24px;color: #333333;margin-left: 408px">一卡通会员价格</span>
+      </div>
+      <div>
+        <div style="width:368px;height:333px;border: 1px solid #EAE0FA">
+
+        </div>
+        <div style="width:368px;height:333px;border: 1px solid #EAE0FA;float: right;display: inline">
+
+        </div>
+      </div>
     </div>
   </div>
 </template>
