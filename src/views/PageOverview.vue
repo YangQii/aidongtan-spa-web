@@ -34,12 +34,15 @@
         <span style="font-size: 24px;color: #333333;margin-left: 408px">一卡通会员价格</span>
       </div>
       <div>
-        <div style="width:368px;height:333px;border: 1px solid #EAE0FA">
+        <span style="width:368px;height:333px;border: 1px solid #EAE0FA;float: left;padding: 26px 32px 40px 21px">
+          <div>
+            <span style="font-size: 18px">1000元/半年卡</span>
+            <span style="width: 64px;height: 21px;background: #FF4D55;border-radius: 3px;float: right;margin-right: 24px;font-size: 12px;line-height: 21px">查看详情</span>
+          </div>
+        </span>
+        <span style="width:368px;height:333px;border: 1px solid #EAE0FA;float: left;margin-left: 215px">
 
-        </div>
-        <div style="width:368px;height:333px;border: 1px solid #EAE0FA;float: right;display: inline">
-
-        </div>
+        </span>
       </div>
     </div>
   </div>
