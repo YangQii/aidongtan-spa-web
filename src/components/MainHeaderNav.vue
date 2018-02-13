@@ -18,8 +18,11 @@
 
 <style>
   .top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 90px;
-    width: 100%;
     background: #FFFFFF;
   }
   .top_index {
