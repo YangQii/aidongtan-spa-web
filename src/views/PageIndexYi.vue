@@ -1,6 +1,7 @@
 <template>
   <div>
     <Table :columns="columns1" :data="data1"></Table>
+    <Page :total="40" size="small"></Page>
   </div>
 </template>
 
