@@ -9,6 +9,10 @@
             :key="index">{{tab}}
         </li>
       </ul>
+      <div class="title_content">
+        <span>会所可容纳人数：1.8万人</span>
+        <span>当前会所人数：123123ren</span>
+      </div>
     </div>
     <!--todo-->
 
@@ -45,7 +49,7 @@
     margin-left: 150px;
   }
   .title {
-    padding: 0 20px 0 10px;
+    padding: 0 20px 0 30px;
     height: 49px;
     border-radius: 4px 4px 0 0;
   }
@@ -57,13 +61,19 @@
     padding: 0 12px;
     line-height: 46px;
     border-bottom: 3px solid transparent;
-    margin-right: 10px;
+    margin-right: 30px;
     color: #697179;
     cursor: pointer;
     position: relative;
+    font-size: 18px;
   }
   .title ul li:hover,  .title ul li:active {
-    border-color: #679fef;
-    color: #679fef;
+    border-color: #FE424A;
+    color: #FE424A;
+  }
+  .title_content {
+    float: right;
+    line-height: 49px;
+    font-size: 14px;
   }
 </style>
