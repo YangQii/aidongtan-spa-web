@@ -47,6 +47,7 @@ const router = new Router({
     {
       path: '/index',
       name: 'index',
+      redirect: { name: 'check' },
       component(resolve) {
         require.ensure(['../views/PageIndex.vue'], () => {
           // eslint-disable-next-line
