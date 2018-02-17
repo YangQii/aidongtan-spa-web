@@ -56,6 +56,60 @@ const router = new Router({
       meta: {
         title: '主页',
       },
+      children: [
+        {
+          path: '/check',
+          name: 'check',
+          component(resolve) {
+            require.ensure(['../views/PageIndexInfo.vue'], () => {
+              // eslint-disable-next-line
+              resolve(require('../views/PageIndexInfo.vue'));
+            });
+          },
+          meta: {
+            title: '审核',
+          },
+        },
+        {
+          path: '/yimember',
+          name: 'yimember',
+          component(resolve) {
+            require.ensure(['../views/PageIndexYi.vue'], () => {
+              // eslint-disable-next-line
+              resolve(require('../views/PageIndexYi.vue'));
+            });
+          },
+          meta: {
+            title: '一卡通会员',
+          },
+        },
+        {
+          path: '/tumember',
+          name: 'tumember',
+          component(resolve) {
+            require.ensure(['../views/PageIndexInfoTuan.vue'], () => {
+              // eslint-disable-next-line
+              resolve(require('../views/PageIndexInfoTuan.vue'));
+            });
+          },
+          meta: {
+            title: '团购',
+          },
+        },
+        {
+          path: '/noalive',
+          name: 'noalive',
+          component(resolve) {
+            require.ensure(['../views/PageIndexInfoWei.vue'], () => {
+              // eslint-disable-next-line
+              resolve(require('../views/PageIndexInfoWei.vue'));
+            });
+          },
+          meta: {
+            title: '未激活',
+          },
+        }
+      ]
     },
     {
       path: '/place',
