@@ -15,12 +15,12 @@
           <li class="trans" :class="{ 'active': $route.name === 'noalive' }">未激活卡</li>
         </router-link>
       </ul>
-      <router-view></router-view>
       <div class="title_content">
         <span>会所可容纳人数：1.8万人</span>
         <span>当前会所人数：123123ren</span>
       </div>
     </div>
+    <router-view></router-view>
     <!--todo-->
     <!--<Tabs value="name1">-->
       <!--<TabPane label="标签一" name="name1">标签一的内容</TabPane>-->
@@ -79,7 +79,7 @@
     position: relative;
     font-size: 18px;
   }
-  .title ul li:hover,  .title ul li:active {
+  .title ul li:hover,  .title ul li.active {
     border-color: #FE424A;
     color: #FE424A;
   }
@@ -87,21 +87,5 @@
     float: right;
     line-height: 49px;
     font-size: 14px;
-  }
-  .index-content_info {
-    padding: 53px 57px 0 55px;
-    background: #FFFFFF;
-  }
-  .main-title {
-    height: 44px;
-    line-height: 44px;
-  }
-  .index-content_info_card {
-    margin-bottom: 100px;
-  }
-  .index-content_info_card ul li {
-    margin-top: 20px;
-    margin-right: 120px;
-    float: left;
   }
 </style>
