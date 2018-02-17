@@ -59,7 +59,7 @@ const router = new Router({
       },
       children: [
         {
-          path: '/check',
+          path: '/index/check',
           name: 'check',
           component(resolve) {
             require.ensure(['../views/PageIndexInfo.vue'], () => {
@@ -72,7 +72,7 @@ const router = new Router({
           },
         },
         {
-          path: '/yimember',
+          path: '/index/yimember',
           name: 'yimember',
           component(resolve) {
             require.ensure(['../views/PageIndexYi.vue'], () => {
@@ -85,7 +85,7 @@ const router = new Router({
           },
         },
         {
-          path: '/tumember',
+          path: '/index/tumember',
           name: 'tumember',
           component(resolve) {
             require.ensure(['../views/PageIndexInfoTuan.vue'], () => {
@@ -98,7 +98,7 @@ const router = new Router({
           },
         },
         {
-          path: '/noalive',
+          path: '/index/noalive',
           name: 'noalive',
           component(resolve) {
             require.ensure(['../views/PageIndexInfoWei.vue'], () => {
