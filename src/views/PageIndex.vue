@@ -2,12 +2,17 @@
   <div class="index-content">
     <div class="title">
       <ul class="fl">
-        <li class="trans"
-            v-for="(tab, index) in ovnav.data"
-            :class="{'active':ovnav.curindex === index}"
-            @click="selnav(tab, index)"
-            :key="index">{{tab}}
-        </li>
+        <!--<li class="trans"-->
+            <!--v-for="(tab, index) in ovnav.data"-->
+            <!--:class="{'active':ovnav.curindex === index}"-->
+            <!--@click="selnav(tab, index)"-->
+            <!--:key="index">{{tab}}-->
+        <!--</li>-->
+        <!--<li class="trans" :class="{'active':ovnav.curindex === index}"></li>-->
+        <li class="trans" :class="{ 'active': $route.name === 'accountManage' }">审核</li>
+        <li class="trans" :class="{ 'active': $route.name === 'accountManage' }">一卡通会员</li>
+        <li class="trans" :class="{ 'active': $route.name === 'accountManage' }">团购会员</li>
+        <li class="trans" :class="{ 'active': $route.name === 'accountManage' }">未激活卡</li>
       </ul>
       <div class="title_content">
         <span>会所可容纳人数：1.8万人</span>
@@ -72,6 +77,11 @@
     components: {
       subRouter
     },
+    methods: {
+      selnav(name, index) {
+
+      }
+    }
   }
 </script>
 
