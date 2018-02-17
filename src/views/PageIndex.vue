@@ -15,12 +15,23 @@
       </div>
     </div>
     <!--todo-->
-
     <!--<Tabs value="name1">-->
       <!--<TabPane label="标签一" name="name1">标签一的内容</TabPane>-->
       <!--<TabPane label="标签二" name="name2">标签二的内容</TabPane>-->
       <!--<TabPane label="标签三" name="name3">标签三的内容</TabPane>-->
     <!--</Tabs>-->
+    <div class="index-content_info">
+      <div class="main-title">
+        <div style="width:182px;height: 44px;border-radius: 22px;background:rgba(255,77,85,1);line-height: 44px;display: inline-block">
+          <i style="margin-left: 50px">一卡通审核</i>
+        </div>
+        <div style="float: right">
+          <span>团购卡审核</span>
+          <span>今日已审核：330</span>
+          <Input v-model="value" placeholder="Enter something..." style="width: 300px"></Input>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -47,6 +58,7 @@
   .index-content {
     margin-top: 100px;
     margin-left: 150px;
+    margin-right: 31px;
   }
   .title {
     padding: 0 20px 0 30px;
@@ -75,5 +87,14 @@
     float: right;
     line-height: 49px;
     font-size: 14px;
+  }
+  .index-content_info {
+    padding: 53px 57px 0 55px;
+    height: 400px;
+    background: #FFFFFF;
+  }
+  .main-title {
+    height: 44px;
+    line-height: 44px;
   }
 </style>
