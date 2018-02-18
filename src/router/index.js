@@ -124,6 +124,34 @@ const router = new Router({
       meta: {
         title: '场馆',
       },
+      children:[
+        {
+          path: '/place/info',
+          name: 'placeinfo',
+          component(resolve) {
+            require.ensure(['../views/PagePlaceInfo.vue'], () => {
+              // eslint-disable-next-line
+              resolve(require('../views/PagePlaceInfo.vue'));
+            });
+          },
+          meta: {
+            title: '场馆信息',
+          },
+        },
+        {
+          path: '/place/eqment',
+          name: 'placeeqment',
+          component(resolve) {
+            require.ensure(['../views/PagePlaceEq.vue'], () => {
+              // eslint-disable-next-line
+              resolve(require('../views/PagePlaceEq.vue'));
+            });
+          },
+          meta: {
+            title: '设备信息',
+          },
+        },
+      ]
     },
     {
       path: '/activity',
