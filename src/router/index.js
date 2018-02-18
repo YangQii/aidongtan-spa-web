@@ -157,6 +157,7 @@ const router = new Router({
     {
       path: '/activity',
       name: 'activity',
+      redirect: { name: 'activitymember' },
       component(resolve) {
         require.ensure(['../views/PageActivity.vue'], () => {
           // eslint-disable-next-line
@@ -166,6 +167,34 @@ const router = new Router({
       meta: {
         title: '活动',
       },
+      children: [
+        {
+          path: '/activity/member',
+          name: 'activitymember',
+          component(resolve) {
+            require.ensure(['../views/PageActivityMember.vue'], () => {
+              // eslint-disable-next-line
+              resolve(require('../views/PageActivityMember.vue'));
+            });
+          },
+          meta: {
+            title: '团购信息',
+          },
+        },
+        {
+          path: '/activity/yi',
+          name: 'activityyi',
+          component(resolve) {
+            require.ensure(['../views/PageActivityYi.vue'], () => {
+              // eslint-disable-next-line
+              resolve(require('../views/PageActivityYi.vue'));
+            });
+          },
+          meta: {
+            title: '一卡通管理',
+          },
+        },
+      ]
     },
     {
       path: '/funding',
