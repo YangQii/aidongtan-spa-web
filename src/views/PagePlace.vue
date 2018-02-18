@@ -2,11 +2,11 @@
   <div class="index-content">
     <div class="title">
       <ul class="fl">
-        <router-link :to="{name: 'check'}">
-          <li class="trans" :class="{ 'active': $route.name === 'check' }">场馆信息</li>
+        <router-link :to="{name: 'placeinfo'}">
+          <li class="trans" :class="{ 'active': $route.name === 'placeinfo' }">场馆信息</li>
         </router-link>
-        <router-link :to="{name: 'yimember'}">
-          <li class="trans" :class="{ 'active': $route.name === 'yimember' }">设备信息</li>
+        <router-link :to="{name: 'placeeqment'}">
+          <li class="trans" :class="{ 'active': $route.name === 'placeeqment' }">设备信息</li>
         </router-link>
       </ul>
     </div>

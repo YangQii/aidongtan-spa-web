@@ -115,6 +115,7 @@ const router = new Router({
     {
       path: '/place',
       name: 'place',
+      redirect: { name: 'placeinfo' },
       component(resolve) {
         require.ensure(['../views/PagePlace.vue'], () => {
           // eslint-disable-next-line
