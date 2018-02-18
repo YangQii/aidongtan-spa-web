@@ -170,6 +170,7 @@ const router = new Router({
     {
       path: '/funding',
       name: 'funding',
+      redirect: { name: 'fundinginfo' },
       component(resolve) {
         require.ensure(['../views/PageFunding.vue'], () => {
           // eslint-disable-next-line
@@ -179,6 +180,34 @@ const router = new Router({
       meta: {
         title: '资金',
       },
+      children:[
+        {
+          path: '/funding/info',
+          name: 'fundinginfo',
+          component(resolve) {
+            require.ensure(['../views/PageFundingInfo.vue'], () => {
+              // eslint-disable-next-line
+              resolve(require('../views/PageFundingInfo.vue'));
+            });
+          },
+          meta: {
+            title: '资金账户',
+          },
+        },
+        {
+          path: '/funding/record',
+          name: 'fundingrecord',
+          component(resolve) {
+            require.ensure(['../views/PageFundingRecord.vue'], () => {
+              // eslint-disable-next-line
+              resolve(require('../views/PageFundingRecord.vue'));
+            });
+          },
+          meta: {
+            title: '收益记录',
+          },
+        },
+      ]
     },
     {
       path: '/setting',
