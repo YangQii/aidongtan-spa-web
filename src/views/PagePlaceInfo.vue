@@ -4,6 +4,7 @@
       <div class="place-content_info_left"></div>
       <div class="place-content_info_right"></div>
     </div>
+    <div class="place-content_vid"></div>
   </div>
 </template>
 
@@ -15,7 +16,7 @@
 
 <style scoped>
   .place-content {
-    padding: 43px 13px 10px 34px;
+    padding: 43px 13px 20px 34px;
     background: #FFFFFF;
   }
   .place-content_info {
@@ -31,6 +32,11 @@
   }
   .place-content_info_right {
     width: 100%;
-    height: ;
+  }
+  .place-content_vid {
+    width: 100%;
+    height: 302px;
+    background: #0eb78d;
+    margin: 40px 20px 0 -10px;
   }
 </style>
