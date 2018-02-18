@@ -241,6 +241,7 @@ const router = new Router({
     {
       path: '/setting',
       name: 'setting',
+      redirect: { name: 'settinginfo' },
       component(resolve) {
         require.ensure(['../views/PageSetting.vue'], () => {
           // eslint-disable-next-line
@@ -250,6 +251,47 @@ const router = new Router({
       meta: {
         title: '设置',
       },
+      children: [
+        {
+          path: '/setting/info',
+          name: 'settinginfo',
+          component(resolve) {
+            require.ensure(['../views/PageSettingInfo.vue'], () => {
+              // eslint-disable-next-line
+              resolve(require('../views/PageSettingInfo.vue'));
+            });
+          },
+          meta: {
+            title: '权限设置',
+          }
+        },
+        {
+          path: '/setting/reset',
+          name: 'settingreset',
+          component(resolve) {
+            require.ensure(['../views/PageSettingReset.vue'], () => {
+              // eslint-disable-next-line
+              resolve(require('../views/PageSettingReset.vue'));
+            });
+          },
+          meta: {
+            title: '权限分配',
+          }
+        },
+        {
+          path: '/setting/user',
+          name: 'settinguser',
+          component(resolve) {
+            require.ensure(['../views/PageSettingUser.vue'], () => {
+              // eslint-disable-next-line
+              resolve(require('../views/PageSettingUser.vue'));
+            });
+          },
+          meta: {
+            title: '密码修改',
+          }
+        },
+      ]
     },
   ],
 });
