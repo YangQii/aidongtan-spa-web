@@ -29,6 +29,7 @@ const router = new Router({
       },
       meta: {
         title: '用户登陆',
+        requireAuth: true,
       },
     },
     {
@@ -294,6 +295,20 @@ const router = new Router({
       ]
     },
   ],
+});
+// router 判断
+router.beforeEach((to, from, next) => {
+  if (to.meta.requireAuth){
+    if (store.state.token){
+      next();
+    }
+    else {
+      next({
+        path: '/login',
+        query: { redirect: to.fullPath },
+      })
+    }
+  }
 });
 
 export default router;
