@@ -10,10 +10,17 @@
         token: '',
       }
     },
+    mounted() {
+      this.$store.commit(types.TITLE, 'Login')
+    },
     methods: {
-      handleLogin() {
+      login() {
         if (this.token) {
-          this.$store.
+          this.$store.commit(types.LOGIN, this.token);
+          let redirect = decodeURIComponent(this.$route.query.redirect || '/');
+          this.$router.push({
+            path: redirect
+          })
         }
       }
     }
