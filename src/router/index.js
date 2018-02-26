@@ -29,7 +29,6 @@ const router = new Router({
       },
       meta: {
         title: '用户登陆',
-        requireAuth: true,
       },
     },
     {
@@ -43,6 +42,7 @@ const router = new Router({
       },
       meta: {
         title: '总览',
+        requireAuth: true,
       },
     },
     {
@@ -299,7 +299,7 @@ const router = new Router({
 // router 判断
 router.beforeEach((to, from, next) => {
   if (to.meta.requireAuth){
-    if (store.state.token){
+    if (Vuex.Store.state.auth.token){
       next();
     }
     else {
