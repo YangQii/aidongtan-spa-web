@@ -29,7 +29,7 @@
         msg: '',
         token: '',
         user: {
-          email: '',
+          mobile: '',
           password: '',
         }
       }
@@ -49,8 +49,9 @@
       // },
       handleLogin() {
         const self = this;
-        const url = '';
-        this.$http.post( ).then(
+        const url = 'http://39.106.151.4:8080/love-move/userCtrl/login.do';
+        this.$http.post(url + '?mobile=' + this.user.mobile + '&loginType=PC' + '&password=' + this.user.password)
+          .then(
           function (res) {
             console.log(res);
             if (res.code == '104') {
