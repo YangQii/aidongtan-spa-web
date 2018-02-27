@@ -297,18 +297,18 @@ const router = new Router({
   ],
 });
 // router 判断
-router.beforeEach((to, from, next) => {
-  if (to.meta.requireAuth){
-    if (Vuex.Store.state.auth.token){
-      next();
-    }
-    else {
-      next({
-        path: '/login',
-        query: { redirect: to.fullPath },
-      })
-    }
-  }
-});
+// router.beforeEach((to, from, next) => {
+//   if (to.meta.requireAuth){
+//     if (Vuex.Store.state.auth.token){
+//       next();
+//     }
+//     else {
+//       next({
+//         path: '/login',
+//         query: { redirect: to.fullPath },
+//       })
+//     }
+//   }
+// });
 
 export default router;
