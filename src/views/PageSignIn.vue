@@ -25,14 +25,15 @@
 <script>
   import http from '../models/index';
   import axios from 'axios';
+  import qs from 'qs';
   export default {
     data() {
       return {
         msg: '',
         token: '',
         user: {
-          mobile: '',
-          password: '',
+          mobile: '17343001436',
+          password: '123456',
         }
       }
     },
@@ -50,8 +51,8 @@
       //   }
       // },
       handleLogin() {
-        //const url = 'http://39.106.151.4:8080/love-move/userCtrl/login.do';
-        // this.$http.post('/api' + '?mobile=' + this.user.mobile + '&loginType=pc&password=' + this.user.password)
+        const url = 'http://39.106.151.4:8080/love-move/userCtrl/login.do';
+        // axios.post(url + '?mobile=' + this.user.mobile + '&loginType=pc&password=' + this.user.password)
         //   .then(
         //   function (res) {
         //     console.log(res);
@@ -65,15 +66,13 @@
         //     }
         //   }
         // );
-        http.post('userCtrl/login.do', {
-
+        http.post('userCtrl/login.do', qs.stringify({
           mobile: '17343001436',
           loginType: 'pc',
           password: '123456',
+        })).then(function (res) {
+          console.log(res);
         })
-          .then(function (res) {
-            console.log(res);
-          })
       }
     }
   }
