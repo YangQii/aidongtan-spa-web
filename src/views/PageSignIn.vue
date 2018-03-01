@@ -4,7 +4,7 @@
       <form v-on:submit.prevent="handleLogin">
         <ul>
           <li>
-            <input type="text" class="input-login" placeholder="请输入邮箱地址" v-model="user.email" />
+            <input type="text" class="input-login" placeholder="请输入邮箱地址" v-model="user.mobile" />
           </li>
           <li>
             <input type="password" class="input-login" placeholder="请输入密码" v-model="user.password" />
@@ -23,6 +23,8 @@
 </template>
 
 <script>
+  import http from '../models/index';
+  import axios from 'axios';
   export default {
     data() {
       return {
@@ -48,22 +50,30 @@
       //   }
       // },
       handleLogin() {
-        const self = this;
-        const url = 'http://39.106.151.4:8080/love-move/userCtrl/login.do';
-        this.$http.post(url + '?mobile=' + this.user.mobile + '&loginType=PC' + '&password=' + this.user.password)
-          .then(
-          function (res) {
+        //const url = 'http://39.106.151.4:8080/love-move/userCtrl/login.do';
+        // this.$http.post('/api' + '?mobile=' + this.user.mobile + '&loginType=pc&password=' + this.user.password)
+        //   .then(
+        //   function (res) {
+        //     console.log(res);
+        //     if (res.code == '104') {
+        //       alert("账户或密码错误！")
+        //     } else {
+        //       window.sessionStorage['token'] = res.data.token;
+        //       // TODO
+        //       window.location.href = '/#/overview?token=' + res.data.token;
+        //       this.msg = res.data.msg;
+        //     }
+        //   }
+        // );
+        http.post('userCtrl/login.do', {
+
+          mobile: '17343001436',
+          loginType: 'pc',
+          password: '123456',
+        })
+          .then(function (res) {
             console.log(res);
-            if (res.code == '104') {
-              alert("账户或密码错误！")
-            } else {
-              window.sessionStorage['token'] = res.data.token;
-              // TODO
-              window.location.href = '/#/overview?token=' + res.data.token;
-              this.msg = res.data.msg;
-            }
-          }
-        )
+          })
       }
     }
   }

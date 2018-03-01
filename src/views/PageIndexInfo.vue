@@ -37,8 +37,14 @@
 </template>
 
 <script>
+  import axios from 'axios';
   export default {
-    name: "page-index-info"
+    name: "page-index-info",
+    data() {
+      return {
+
+      }
+    }
   }
 </script>
 
