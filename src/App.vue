@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <main-top-nav v-show="handlerShowNav"></main-top-nav>
+    <main-top-nav></main-top-nav>
 
     <div class="mainWrap">
-      <main-left-nav v-show="handlerShowNav"></main-left-nav>
+      <main-left-nav></main-left-nav>
       <div id="mainContent">
         <router-view></router-view>
       </div>

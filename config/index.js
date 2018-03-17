@@ -11,16 +11,16 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     // TODO 跨域问题
-    // proxyTable: {
-    //   '/api': {
-    //     target: 'http://39.106.151.4:8080/', // 目标地址
-    //     changeOrigin: true,
-    //     // 路径重写
-    //     pathRewrite: {
-    //       '^/api': '/',
-    //     }
-    //   }
-    // },
+    proxyTable: {
+      '/api': {
+        target: 'http://39.106.151.4:8080/', // 目标地址
+        changeOrigin: true,
+        // 路径重写
+        pathRewrite: {
+          '^/api': '/',
+        }
+      }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
