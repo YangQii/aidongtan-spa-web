@@ -17,7 +17,7 @@ module.exports = {
         changeOrigin: true,
         // 路径重写
         pathRewrite: {
-          '^/api': '/',
+          '^/api': 'http://39.106.151.4:8080/',
         }
       }
     },
